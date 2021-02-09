@@ -1,0 +1,408 @@
+
+::selection{
+    background-color: ;
+    color: ;
+}
+
+
+
+
+
+/*navigatio bar*/
+
+/* .my-link{
+    color:#e65f78 !important;
+} */
+.my-link{
+    color: white !important;
+}
+.my-link:hover{
+    color:#e65f78 !important;
+}
+.logo{
+    padding-top: 5px;
+    width: 100px;
+    height: 50px;
+    backgr ound-color: tomato;
+}
+.logo img{
+    width: 100%;
+    hei ght: 100%;
+}
+
+
+
+
+
+
+/*header*/
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.text{
+    text-align: center;
+    color: #fff;
+}
+.text h3{
+text-transform: uppercase;
+}
+
+.text p{
+    margin: auto;
+    width: 70%;
+    font-size: 18px;
+}
+
+.text h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 7rem;
+    text-transform: capitalize;
+
+}
+.my-button{
+    border: white solid 2px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    transition: all .25s;
+}
+
+.my-button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.my-button:focus{
+    outline: none;
+}
+
+.settings-icon{
+    background-color: #252525;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    /* width: 30px; 
+    height: 30px; */
+    position: fixed;
+    left:0;
+    top: 20%;
+}
+
+
+.settings-icon a{
+    color: white;
+}
+
+.scroll-overlay{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    animation: myScroll 1s infinite alternate-reverse ;
+
+}
+
+@keyframes myScroll{
+
+    /* 25%{
+            bottom: 25px;
+            background-color: teal;
+    }
+    50%{    
+        bottom: 5px;
+        background-color: rgb(0, 128, 30);
+
+    }
+    75%{    
+            bottom: 40px;
+            background-color: rgb(11, 0, 128);
+
+    }
+    100%{    
+            bottom: 10px;
+            background-color: rgb(128, 0, 11);
+
+    } */
+
+    from{
+        bottom: 20px;
+
+    }
+
+    to{
+
+        bottom: 40px;
+
+    }
+
+}
+
+.scroll{
+    width: 30px;
+    height: 60px;
+    border: white solid 2px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.scroll::after{
+    color: white;
+    content: "";
+    /* border: white solid 1px; */
+    background-color: white;
+    width: 2px;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+
+
+}
+
+
+
+
+
+
+.span-about{
+    font-weight: 700;
+}
+
+.span-im{
+    color: #e65f78 !important;
+}
+.icon{
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+}
+
+.about-me-icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.about-me-icons a:hover .icon{
+    color: #e65f78 !important;
+    border-color:  #e65f78 ;
+}
+
+#about-me h2{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+#about-me h3{
+
+    font-size: 1.5rem;
+}
+#about-me p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+/***************Our Services******/
+#our-services{
+    background-color: #f8f9fa!important;
+}
+#our-services p{
+    max-width: 500px;
+}
+
+.my-line{
+    margin-bottom: .5rem;
+    width: 15%;
+    height: 3px;
+    background-color: #e65f78;
+    /* margin-left: 40%; */
+    /* position: absolute;
+    bottom: 36%;*/
+    margin-left: 42.5%; 
+    transition: all .5s;
+}
+.our-services-item:hover .my-line{
+
+    width: 30%;
+    margin-left: 35%;
+}
+
+
+.our-services-item p{
+    display: block;
+    margin-top: 100px;
+    width: 70%;
+}
+
+.our-services-icon{
+    color: #e65f78 !important;
+    font-weight: 900;
+}
+
+.our-services h2{
+    text-transform: capitalize;
+}
+
+
+#available{
+    background-color: #fff;
+}
+#available .my-button{
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #e65f78;
+}
+
+#available .my-button:hover{
+    background-color: #d55970 !important;
+    color: white;
+
+}
+
+
+#our-client{
+    background-color: #F8F9FB!important;
+}
+
+
+#our-client h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.our-client-image img{
+    border-radius: 50%;
+}
+
+.our-client-item p{
+    width: 60%;
+}
+.available p{
+    width: 30%;
+}
+
+
+
+ol .active{
+    width: 15px!important;
+    height: 5px!important;
+    border-radius: 40% !important;
+
+}
+.indicator-1{
+    width: 8px!important;
+    height: 5px!important;
+    background-color: #d55970 !important;
+/* border-radius:7.5px !important; */
+
+
+}
+.indicator-2{
+    width: 8px!important;
+    height: 5px!important;
+    background-color: #d55970 !important;
+border-radius:7.5px !important;
+}
+.indicator-3{
+    width: 8px!important;
+    height: 5px!important;
+    background-color: #d55970 !important;
+border-radius:7.5px !important;
+}
+
+.span-client{
+    font-weight: 600;
+}
+
+.my-indicators{
+    bottom: -10%;
+
+}
+
+.w-30{
+    width: 30%;
+}
+
+
+#our-works{
+
+}
+.navigation ul .active{
+    background-color: #e65f78!important;
+    border-radius: 30px;
+}
+.navigation ul li a{
+    color: #000!important;
+}
+
+
+/*our blog*/
+#our-blog{
+    background-color: #f8f9fa!important;
+}
+
+
+#our-blog .blog-item a{
+    text-decoration: none;
+    color: #e65f78;
+
+}
+
+
+#our-blog .blog-item{
+    border-radius: 6px;
+
+}
+#our-blog img{
+    border-radius: 10px;
+}
+
+
+/*contact us*/
+
+#contact-us i{
+    color: #e65f78;
+}
+
+.btn-color{
+    background-color: #e65f78;
+    
+}
+.btn-color:focus{
+    outline: none!important;
+}
+
+
+
+/*footer*/
+#my-footer{
+    background-color: #212529;
+}
+#my-footer a{
+    text-decoration: none;
+    color:#6c757d!important
+}
+
+#my-footer .icon{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.476);
+}
